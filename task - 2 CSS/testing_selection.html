@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p::selection {
+            background-color: darkgreen;
+            color: #f4f4f4;
+
+        }
+
+        #text:in-range {
+            background-color: blueviolet;
+        }
+
+        :is(p,a):hover {
+            color: violet;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nostrum laudantium. Doloremque voluptas maiores at doloribus, ut praesentium sequi, necessitatibus mollitia alias repellat eaque quia reprehenderit tempora magni aut numquam enim earum excepturi nesciunt in nostrum. Eos, aspernatur, impedit laborum odio labore maiores vel incidunt esse culpa reprehenderit error! Saepe!</p>
+
+<form action="output.php">
+    <input type="text" name="text" id="text" min="5" max="100" value="1">
+</form>
+
+<a href="#">this is a link</a>
+
+
+</body>
+</html>
